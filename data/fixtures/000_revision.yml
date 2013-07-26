@@ -1,0 +1,4 @@
+SnsConfig:
+  op_postalcode_plugin_current_revision:
+    name: 'opPostalCodePlugin_revision'
+    value: 0

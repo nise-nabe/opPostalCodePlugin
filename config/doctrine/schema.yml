@@ -1,0 +1,15 @@
+options:
+  charset: utf8
+actAs: [Timestampable]
+
+PostalCode:
+  columns:
+    id:           { type: integer(4), primary: true, autoincrement: true, comment: "Serial Number" }
+    postal_code:  { type: string(12), default: "",   notnull:       true, comment: "Postal Code"   }
+    prefecture:   { type: string(64), default: "",   notnull:       true, comment: "Prefecture"   }
+    municipality: { type: string(64), default: "",   notnull:       true, comment: "Municipality" }
+    address:      { type: string(64), default: "",   notnull:       true, comment: "Address"      }
+  options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
